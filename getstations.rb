@@ -10,7 +10,7 @@ def output_CSV(s)
 
 s.each do |t|
 station_info = [t['id'],t['lat'],t['lon']].to_csv
-File.open('test.txt', 'a') do |file|
+File.open('getstationsOutput.csv', 'a') do |file|
  file.puts station_info
 end
 end
